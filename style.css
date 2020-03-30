@@ -24,6 +24,7 @@ font-weight: bold;}
 
 .jumbotron {background-color: green;
 padding: 100px 0 ;
+margin-bottom: 0;
 }
  .jumbotron h1 {font-weight: bold;
  color: white;
@@ -55,4 +56,47 @@ transform: translateY(-50%);
 width: calc((100% - 60px) / 2);
 height: 3px;
 background-color: white;
+}
+
+#pag-2{background-color: white;}
+#pag-2 h1{font-weight: bold;
+color: black;}
+
+.separatore-2 {width: 250px;
+position: relative;
+}
+
+.separatore-2::before {
+content: '';
+position: absolute;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+width: calc((100% - 60px) / 2);
+height: 3px;
+background-color: black;
+}
+
+.separatore-2::after {
+content: '';
+position: absolute;
+right: 0;
+top: 50%;
+transform: translateY(-50%);
+width: calc((100% - 60px) / 2);
+height: 3px;
+background-color: black;
+}
+img{width: 330px;
+margin-bottom: 30px;}
+.portfolio .portfolio-item {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+    border-radius: .5rem;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+
 }
