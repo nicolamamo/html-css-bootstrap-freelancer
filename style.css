@@ -2,37 +2,57 @@
 padding:0;
 box-sizing:border-box}
 
-h1{text-transform: uppercase;
-font-weight: bold;
-color: white;
+
+.navbar-default {border:0;
+background-color: blue;
+border-radius: 0;
+margin-bottom: 0;
 }
 
-li {float: left;
-list-style: none;
-font-weight: bold;
-text-transform:uppercase;
-margin-top: 20px;
-margin-left: 15px;
-color: white;
+ .navbar-default .navbar-brand,
+ .navbar-default .navbar-nav > li > a{color: white;
+ text-transform: uppercase;
+font-weight: bold;}
+
+
+.navbar-default.navbar{padding: 20px 0px;}
+
+.navbar-default .navbar-brand {font-size: 20px;}
+
+.jumbotron img {height: 200px;}
+
+
+.jumbotron {background-color: green;
+padding: 100px 0 ;
+}
+ .jumbotron h1 {font-weight: bold;
+ color: white;
 }
 
-@media (max-widht:768px){
-    li{float:none;}
+
+.jumbotron p {color: white;}
+.separatore {width: 250px;
+position: relative;
 }
 
-
-#menu {background-color: grey;}
-#icona {margin-top: 300px;}
-
-
-.h1{text-transform: uppercase;
-font-weight: bold;
-color: white;
+.separatore::before {
+content: '';
+position: absolute;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+width: calc((100% - 60px) / 2);
+height: 3px;
+background-color: white;
 }
 
-#facciata{background-color: green;
-height: 100%;
-background-image: url(avatar.svg);}
-
-
- .piccolo{background-color: white;}
+.separatore::after {
+content: '';
+position: absolute;
+right: 0;
+top: 50%;
+transform: translateY(-50%);
+width: calc((100% - 60px) / 2);
+height: 3px;
+background-color: white;
+}
